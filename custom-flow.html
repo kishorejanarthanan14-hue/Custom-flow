@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Custom Flow | Your Vision. Our Flow.</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+:root{--bg:#0b0d12;--s:#12151c;--l:#232838;--t:#eef0f5;--m:#9aa3b5;--a:#6c5cff;--b:#19d3c5;--g:linear-gradient(120deg,#6c5cff,#19d3c5);color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{background:var(--bg);color:var(--t);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:Sora,system-ui,sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:96px 0}
+h2{font-size:clamp(30px,5vw,48px);margin-bottom:14px}
+.sub{color:var(--m);max-width:620px;margin-bottom:44px}
+.grad{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;border:1px solid var(--l);cursor:pointer;font-size:16px;color:var(--t);background:transparent;transition:.25s}
+.btn:hover{transform:translateY(-2px);border-color:#4a5270}
+.btn.p{background:var(--g);border:0;color:#06080c}
+.btn.p:hover{box-shadow:0 10px 30px rgba(108,92,255,.35)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,13,18,.9);border-bottom:1px solid var(--l)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-weight:800;letter-spacing:.06em}
+.links{display:flex;gap:26px;align-items:center;font-size:15px;color:var(--m)}
+.links a:hover{color:var(--t)}
+.burger{display:none;background:none;border:1px solid var(--l);color:var(--t);border-radius:10px;padding:8px 12px;font-size:15px}
+.hero{padding:80px 0 60px;position:relative}
+.hero:before{content:"";position:absolute;inset:-100px 0 auto;height:520px;background:radial-gradient(600px 300px at 70% 30%,rgba(108,92,255,.22),transparent),radial-gradient(500px 260px at 20% 50%,rgba(25,211,197,.12),transparent);pointer-events:none}
+.hero .w{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+h1{font-size:clamp(42px,7vw,76px);font-weight:800;margin-bottom:22px}
+.hero p{color:var(--m);font-size:19px;max-width:480px;margin-bottom:32px}
+.row{display:flex;gap:14px;flex-wrap:wrap}
+.frame{background:var(--s);border:1px solid var(--l);border-radius:18px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--l);align-items:center}
+.bar i{width:9px;height:9px;border-radius:50%;background:#2c3247}
+.bar span{margin-left:auto;font-size:12px;color:var(--m)}
+.mk{padding:14px;transition:opacity .5s}
+.mk .h{height:120px;border-radius:12px;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;font:700 18px Sora,sans-serif;color:#fff}
+.mk .h small{font:500 11px system-ui;opacity:.8}
+.mk .c{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.mk .c b{height:44px;border-radius:8px;background:#1b2030}
+.mk .c b:first-child{background:#222842}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--s);border:1px solid var(--l);border-radius:18px;padding:28px;transition:.3s;position:relative}
+.card:hover{transform:translateY(-6px);border-color:#4a5270;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.card h3{font-size:20px;margin-bottom:10px}
+.card p{color:var(--m);font-size:15px}
+.ic{width:38px;height:4px;border-radius:4px;background:var(--g);margin-bottom:20px}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.why div{padding:18px 20px;border:1px solid var(--l);border-radius:14px;background:var(--s);font-weight:600}
+.why div:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--g);margin-right:10px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;padding-top:34px}
+.steps:before{content:"";position:absolute;top:13px;left:0;right:0;height:3px;border-radius:3px;background:linear-gradient(90deg,#6c5cff,#19d3c5,#6c5cff);background-size:200% 100%;animation:fl 5s linear infinite}
+@keyframes fl{to{background-position:200% 0}}
+.st{position:relative}
+.st:before{content:"";position:absolute;top:-28px;left:0;width:17px;height:17px;border-radius:50%;background:var(--bg);border:3px solid var(--b)}
+.st em{font:700 14px Sora,sans-serif;font-style:normal;color:var(--b)}
+.st h3{font-size:19px;margin:6px 0}
+.st p{color:var(--m);font-size:15px}
+.pf .mk{padding:0}
+.pf .mk .h{border-radius:0;height:150px}
+.pf .mk .c{padding:12px;margin:0}
+.tag{display:inline-block;font-size:12px;color:var(--m);border:1px solid var(--l);border-radius:999px;padding:2px 10px;margin:14px 0 6px}
+.pf .card{padding:0;overflow:hidden}
+.pf .in{padding:0 22px 22px}
+.price{font:800 40px Sora,sans-serif;margin:12px 0}
+.price small{font:500 14px system-ui;color:var(--m)}
+.card ul{list-style:none;padding:0;margin:18px 0 24px;color:var(--m);font-size:15px}
+.card li{padding:6px 0;border-top:1px solid var(--l)}
+.hot{border-color:#6c5cff;background:linear-gradient(180deg,#171a2b,var(--s))}
+.badge{position:absolute;top:-12px;right:22px;background:var(--g);color:#06080c;font:700 12px system-ui;padding:4px 12px;border-radius:999px}
+.abt{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.abt p{color:var(--m);margin-bottom:16px}
+blockquote{font-size:16px;margin-bottom:18px}
+.who{color:var(--m);font-size:14px}
+details{border-bottom:1px solid var(--l);padding:20px 0}
+summary{cursor:pointer;font:600 18px Sora,sans-serif;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--b);font-size:24px}
+details[open] summary:after{content:"\2212"}
+details p{color:var(--m);margin-top:12px;max-width:720px}
+.cta{text-align:center;background:radial-gradient(600px 260px at 50% 0,rgba(108,92,255,.25),transparent)}
+.cta .sub{margin:0 auto 36px}
+form{max-width:560px;margin:36px auto 0;display:grid;gap:12px;text-align:left}
+input,select,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--l);background:var(--s);color:var(--t);font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--a);border-color:transparent}
+#ok{color:var(--b);text-align:center;min-height:24px}
+footer{border-top:1px solid var(--l);padding:56px 0 40px;color:var(--m);font-size:15px}
+.ft{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.ft nav,.ft .so{display:flex;gap:18px;flex-wrap:wrap}
+.ft a:hover{color:var(--t)}
+.fine{margin-top:34px;padding-top:22px;border-top:1px solid var(--l);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px}
+dialog{background:var(--s);color:var(--t);border:1px solid var(--l);border-radius:16px;padding:28px;max-width:480px}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.rv{opacity:0;transform:translateY(24px);transition:.7s}
+.rv.on{opacity:1;transform:none}
+@media(max-width:860px){
+.hero .w,.abt{grid-template-columns:1fr}
+.grid,.why{grid-template-columns:1fr 1fr}
+.steps{grid-template-columns:1fr;padding:0 0 0 34px}
+.steps:before{top:0;bottom:0;left:6px;right:auto;width:3px;height:auto}
+.st:before{top:6px;left:-36px}
+.burger{display:block}
+.links{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;background:var(--bg);padding:20px;border-bottom:1px solid var(--l);gap:18px}
+.links.open{display:flex}
+section{padding:72px 0}
+}
+@media(max-width:560px){.grid,.why{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a href="#home" class="logo">CUSTOM FLOW</a>
+<button class="burger" id="bg" aria-label="Menu">Menu</button>
+<nav class="links" id="lk">
+<a href="#home">Home</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact" class="btn p" style="padding:9px 20px">Contact</a>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="w">
+<div class="rv">
+<h1>Your Vision.<br><span class="grad">Our Flow.</span></h1>
+<p>Custom websites built around your brand, your goals, and your ideas.</p>
+<div class="row"><a href="#contact" class="btn p">Start Your Website</a><a href="#work" class="btn">See Our Work</a></div>
+</div>
+<div class="frame rv"><div class="bar"><i></i><i></i><i></i><span id="lab">Building</span></div><div class="mk" id="hm"></div></div>
+</div></section>
+
+<section id="services"><div class="w">
+<h2 class="rv">Websites That Fit Your Business.</h2>
+<p class="sub rv">Every project is designed from scratch around how your business works and who you want to reach.</p>
+<div class="grid" id="sv"></div>
+</div></section>
+
+<section><div class="w">
+<h2 class="rv">Built Custom. Built to Flow.</h2>
+<p class="sub rv">A process and a result that stay smooth from the first message to launch day.</p>
+<div class="why rv" id="wy"></div>
+</div></section>
+
+<section><div class="w">
+<h2 class="rv">Our Process</h2>
+<p class="sub rv">Four clear steps, with you involved at every turn.</p>
+<div class="steps rv" id="sp"></div>
+</div></section>
+
+<section id="work"><div class="w">
+<h2 class="rv">See What We Can Build.</h2>
+<p class="sub rv">Six sample projects for fictional businesses, made to show range across industries.</p>
+<div class="grid pf" id="pf"></div>
+</div></section>
+
+<section id="pricing"><div class="w">
+<h2 class="rv">Simple Plans. Custom Results.</h2>
+<p class="sub rv">Every plan is a starting point. Final pricing depends on your project.</p>
+<div class="grid" id="pr"></div>
+</div></section>
+
+<section id="about"><div class="w abt">
+<div><h2 class="rv">More Than Just a Website.</h2></div>
+<div class="rv"><p>Custom Flow starts by understanding what each customer actually needs. We learn your brand, your audience and your goals, then create a website around them.</p>
+<p>You will not be forced into a generic template. Every layout, page and detail is shaped to fit you, and AI assisted development lets us move quickly without cutting corners.</p></div>
+</div></section>
+
+<section><div class="w">
+<h2 class="rv">Kind Words.</h2>
+<p class="sub rv">Placeholder testimonials, replace them with real client feedback.</p>
+<div class="grid" id="ts"></div>
+</div></section>
+
+<section id="faq"><div class="w">
+<h2 class="rv">Questions, Answered.</h2>
+<div id="fq" style="margin-top:30px"></div>
+</div></section>
+
+<section class="cta" id="contact"><div class="w">
+<h2 class="rv">Let's Build Something That Flows.</h2>
+<p class="sub rv">Have an idea for a website? Tell Custom Flow what you need and we'll turn the idea into a professional online presence.</p>
+<form id="fm" class="rv" novalidate>
+<input id="n" placeholder="Your name" required>
+<input id="e" type="email" placeholder="Your email" required>
+<select id="t"><option>Business Website</option><option>Landing Page</option><option>Portfolio Website</option><option>E-commerce Website</option><option>Startup Website</option><option>Website Redesign</option></select>
+<textarea id="m" rows="4" placeholder="Tell us about your project" required></textarea>
+<button class="btn p" type="submit">Start Your Project</button>
+<p id="ok" role="status"></p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="w">
+<div class="ft">
+<div><div class="logo" style="color:var(--t)">CUSTOM FLOW</div><p style="margin-top:6px">Your Vision. Our Flow.</p><p id="em" style="margin-top:14px"></p></div>
+<nav><a href="#home">Home</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#faq">FAQ</a></nav>
+<div class="so" id="so"></div>
+</div>
+<div class="fine"><span>&copy; <span id="yr"></span> Custom Flow. All rights reserved.</span><span><a href="#" data-d="Privacy Policy">Privacy Policy</a> &nbsp; <a href="#" data-d="Terms">Terms</a></span></div>
+</div></footer>
+
+<dialog id="dl"><h3 id="dt" style="margin-bottom:12px"></h3><p style="color:var(--m);margin-bottom:20px">Placeholder text. Replace this with your own policy before launch.</p><form method="dialog" style="margin:0"><button class="btn">Close</button></form></dialog>
+
+<script>
+// Edit everything below to change the site content.
+var CONFIG={
+email:"hello@customflow.com",
+social:{Instagram:"#",LinkedIn:"#",X:"#"},
+plans:[
+{n:"Starter",d:"For simple websites and personal projects.",p:"$499",f:["Up to 3 pages","Mobile responsive","Basic SEO setup","1 round of revisions"]},
+{n:"Pro",d:"For businesses that need a complete professional website.",p:"$1,499",f:["Up to 8 pages","Custom design","SEO friendly structure","3 rounds of revisions"],hot:1},
+{n:"Business",d:"For larger websites and advanced requirements.",p:"$3,499",f:["Unlimited pages","E-commerce or integrations","Priority support","Flexible revisions"]}
+],
+reviews:[
+{q:"Replace this with a real client testimonial about working with Custom Flow.",w:"Client Name, Company"},
+{q:"Replace this with a real client testimonial about working with Custom Flow.",w:"Client Name, Company"},
+{q:"Replace this with a real client testimonial about working with Custom Flow.",w:"Client Name, Company"}
+]};
+
+var services=[["Business Websites","Professional sites that build trust and turn visitors into customers."],["Landing Pages","Focused pages designed for one goal and built to convert."],["Portfolio Websites","Showcase your work with a site that feels as sharp as you are."],["E-commerce Websites","Smooth online stores that make buying simple."],["Startup Websites","Launch ready sites that tell your story and win early users."],["Website Redesigns","Give an outdated site a fresh, faster and more effective look."]];
+var why=["Custom designs","Fast development","Mobile responsive","Modern UI/UX","SEO friendly structure","Easy communication","Flexible revisions"];
+var steps=[["01","Tell Us Your Idea","Share your goals, brand and inspiration with us."],["02","We Design & Build","We craft a custom site around what you told us."],["03","You Review","Look it over and request as many tweaks as you need."],["04","We Launch","Your site goes live, polished and ready for visitors."]];
+var work=[["Ember & Oak","Restaurant","#7a2e1d","#e08a3c"],["Nimbus Labs","Technology startup","#2b3fbf","#19d3c5"],["Northwind Apparel","Clothing brand","#222","#8d7b6a"],["Ava Lindqvist","Personal portfolio","#5a2a83","#d06bc0"],["Harbor Plumbing","Local business","#0e5a73","#3fb6d6"],["Pulseboard","SaaS company","#1c3a8a","#6c5cff"]];
+var faqs=[["How long does a website take?","Most sites take one to three weeks depending on size and complexity. We give you a clear timeline before we start."],["Can I request changes?","Yes. Every plan includes revisions, and we keep refining until you are happy."],["Can you redesign my existing website?","Absolutely. We can keep what works and rebuild the rest with a modern design."],["Can you connect my domain?","Yes. We can connect a domain you own or help you choose and register a new one."],["Do you provide hosting?","We can set up reliable hosting for you or deploy to the provider you already use."],["Can you maintain my website after launch?","Yes. We offer ongoing updates and support if you would like us to stay involved."],["What information do you need from me?","Your goals, brand details such as logo and colors, any content you have, and examples of sites you like."]];
+
+var $=function(i){return document.getElementById(i)};
+function mock(t,a,b,s){return '<div class="h" style="background:linear-gradient(135deg,'+a+','+b+')"><small>'+s+'</small>'+t+'</div><div class="c"><b></b><b></b><b></b></div>'}
+$("sv").innerHTML=services.map(function(s){return '<div class="card rv"><div class="ic"></div><h3>'+s[0]+'</h3><p>'+s[1]+'</p></div>'}).join("");
+$("wy").innerHTML=why.map(function(w){return '<div>'+w+'</div>'}).join("");
+$("sp").innerHTML=steps.map(function(s){return '<div class="st"><em>'+s[0]+'</em><h3>'+s[1]+'</h3><p>'+s[2]+'</p></div>'}).join("");
+$("pf").innerHTML=work.map(function(w){return '<div class="card rv"><div class="mk">'+mock(w[0],w[2],w[3],w[1])+'</div><div class="in"><span class="tag">Sample project</span><h3>'+w[0]+'</h3><p>'+w[1]+' concept, fictional business.</p></div></div>'}).join("");
+$("pr").innerHTML=CONFIG.plans.map(function(p){return '<div class="card rv'+(p.hot?' hot':'')+'">'+(p.hot?'<span class="badge">Most popular</span>':'')+'<h3>'+p.n.toUpperCase()+'</h3><p>'+p.d+'</p><div class="price">'+p.p+' <small>starting at</small></div><ul>'+p.f.map(function(f){return '<li>'+f+'</li>'}).join("")+'</ul><a href="#contact" class="btn'+(p.hot?' p':'')+'" data-plan="'+p.n+'">Choose '+p.n+'</a></div>'}).join("");
+$("ts").innerHTML=CONFIG.reviews.map(function(r){return '<div class="card rv"><blockquote>"'+r.q+'"</blockquote><div class="who">'+r.w+'</div></div>'}).join("");
+$("fq").innerHTML=faqs.map(function(f){return '<details><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>'}).join("");
+$("so").innerHTML=Object.keys(CONFIG.social).map(function(k){return '<a href="'+CONFIG.social[k]+'" target="_blank" rel="noopener">'+k+'</a>'}).join("");
+$("em").innerHTML='<a href="mailto:'+CONFIG.email+'">'+CONFIG.email+'</a>';
+$("yr").textContent=new Date().getFullYear();
+
+var demo=[["Ember & Oak","#7a2e1d","#e08a3c","Restaurant"],["Nimbus Labs","#2b3fbf","#19d3c5","Startup"],["Northwind","#222","#8d7b6a","Clothing brand"],["Pulseboard","#1c3a8a","#6c5cff","SaaS"]],di=0;
+function show(){var d=demo[di%demo.length],h=$("hm");h.style.opacity=0;setTimeout(function(){h.innerHTML=mock(d[0],d[1],d[2],d[3]);$("lab").textContent="Building: "+d[3];h.style.opacity=1;di++},400)}
+show();setInterval(show,3200);
+
+$("bg").onclick=function(){$("lk").classList.toggle("open")};
+document.querySelectorAll("#lk a").forEach(function(a){a.onclick=function(){$("lk").classList.remove("open")}});
+document.querySelectorAll("[data-plan]").forEach(function(a){a.onclick=function(){$("m").value="I am interested in the "+a.dataset.plan+" plan."}});
+document.querySelectorAll("[data-d]").forEach(function(a){a.onclick=function(e){e.preventDefault();$("dt").textContent=a.dataset.d;$("dl").showModal()}});
+
+$("fm").onsubmit=function(e){e.preventDefault();var n=$("n").value.trim(),em=$("e").value.trim(),m=$("m").value.trim(),o=$("ok");
+if(!n||!/^\S+@\S+\.\S+$/.test(em)||!m){o.style.color="#ff8a8a";o.textContent="Please fill in your name, a valid email and a short message.";return}
+o.style.color="";o.textContent="Thank you, "+n+". Your email app will open to send your request.";
+location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("New project: "+$("t").value)+"&body="+encodeURIComponent("Name: "+n+"\nEmail: "+em+"\n\n"+m)};
+
+var io=new IntersectionObserver(function(x){x.forEach(function(i){if(i.isIntersecting){i.target.classList.add("on");io.unobserve(i.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(r){io.observe(r)});
+</script>
+</body>
+</html>
