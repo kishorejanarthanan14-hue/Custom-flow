@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0}
-:root{--bg:#0b0d12;--s:#12151c;--l:#232838;--t:#eef0f5;--m:#9aa3b5;--a:#6c5cff;--b:#19d3c5;--g:linear-gradient(120deg,#6c5cff,#19d3c5);color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--bg:#e6f5ff;--s:#ffffff;--l:#c5e2f7;--t:#0a2a4a;--m:#476b8c;--a:#0a84ff;--b:#0a9be8;--g:linear-gradient(120deg,#0a84ff,#38d0ff);color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
 body{background:var(--bg);color:var(--t);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
 h1,h2,h3,.logo{font-family:Sora,system-ui,sans-serif;line-height:1.1;letter-spacing:-.02em}
@@ -18,34 +18,34 @@ h2{font-size:clamp(30px,5vw,48px);margin-bottom:14px}
 .sub{color:var(--m);max-width:620px;margin-bottom:44px}
 .grad{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
 .btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;border:1px solid var(--l);cursor:pointer;font-size:16px;color:var(--t);background:transparent;transition:.25s}
-.btn:hover{transform:translateY(-2px);border-color:#4a5270}
-.btn.p{background:var(--g);border:0;color:#06080c}
-.btn.p:hover{box-shadow:0 10px 30px rgba(108,92,255,.35)}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,13,18,.9);border-bottom:1px solid var(--l)}
+.btn:hover{transform:translateY(-2px);border-color:#7fb8e6}
+.btn.p{background:var(--g);border:0;color:#fff}
+.btn.p:hover{box-shadow:0 10px 30px rgba(10,132,255,.35)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(230,245,255,.92);border-bottom:1px solid var(--l)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
 .logo{font-weight:800;letter-spacing:.06em}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;color:var(--m)}
 .links a:hover{color:var(--t)}
 .burger{display:none;background:none;border:1px solid var(--l);color:var(--t);border-radius:10px;padding:8px 12px;font-size:15px}
 .hero{padding:80px 0 60px;position:relative}
-.hero:before{content:"";position:absolute;inset:-100px 0 auto;height:520px;background:radial-gradient(600px 300px at 70% 30%,rgba(108,92,255,.22),transparent),radial-gradient(500px 260px at 20% 50%,rgba(25,211,197,.12),transparent);pointer-events:none}
+.hero:before{content:"";position:absolute;inset:-100px 0 auto;height:520px;background:radial-gradient(600px 300px at 70% 30%,rgba(10,132,255,.22),transparent),radial-gradient(500px 260px at 20% 50%,rgba(56,208,255,.35),transparent);pointer-events:none}
 .hero .w{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
 h1{font-size:clamp(42px,7vw,76px);font-weight:800;margin-bottom:22px}
 .hero p{color:var(--m);font-size:19px;max-width:480px;margin-bottom:32px}
 .row{display:flex;gap:14px;flex-wrap:wrap}
-.frame{background:var(--s);border:1px solid var(--l);border-radius:18px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.frame{background:var(--s);border:1px solid var(--l);border-radius:18px;overflow:hidden;box-shadow:0 30px 80px rgba(10,110,190,.22)}
 .bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--l);align-items:center}
-.bar i{width:9px;height:9px;border-radius:50%;background:#2c3247}
+.bar i{width:9px;height:9px;border-radius:50%;background:#b3d4ee}
 .bar span{margin-left:auto;font-size:12px;color:var(--m)}
 .mk{padding:14px;transition:opacity .5s}
 .mk .h{height:120px;border-radius:12px;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;font:700 18px Sora,sans-serif;color:#fff}
 .mk .h small{font:500 11px system-ui;opacity:.8}
 .mk .c{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
-.mk .c b{height:44px;border-radius:8px;background:#1b2030}
-.mk .c b:first-child{background:#222842}
+.mk .c b{height:44px;border-radius:8px;background:#dcedfb}
+.mk .c b:first-child{background:#cbe3f8}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--s);border:1px solid var(--l);border-radius:18px;padding:28px;transition:.3s;position:relative}
-.card:hover{transform:translateY(-6px);border-color:#4a5270;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.card:hover{transform:translateY(-6px);border-color:#7fb8e6;box-shadow:0 20px 50px rgba(10,110,190,.18)}
 .card h3{font-size:20px;margin-bottom:10px}
 .card p{color:var(--m);font-size:15px}
 .ic{width:38px;height:4px;border-radius:4px;background:var(--g);margin-bottom:20px}
@@ -53,7 +53,7 @@ h1{font-size:clamp(42px,7vw,76px);font-weight:800;margin-bottom:22px}
 .why div{padding:18px 20px;border:1px solid var(--l);border-radius:14px;background:var(--s);font-weight:600}
 .why div:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--g);margin-right:10px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;padding-top:34px}
-.steps:before{content:"";position:absolute;top:13px;left:0;right:0;height:3px;border-radius:3px;background:linear-gradient(90deg,#6c5cff,#19d3c5,#6c5cff);background-size:200% 100%;animation:fl 5s linear infinite}
+.steps:before{content:"";position:absolute;top:13px;left:0;right:0;height:3px;border-radius:3px;background:linear-gradient(90deg,#0a84ff,#38d0ff,#0a84ff);background-size:200% 100%;animation:fl 5s linear infinite}
 @keyframes fl{to{background-position:200% 0}}
 .st{position:relative}
 .st:before{content:"";position:absolute;top:-28px;left:0;width:17px;height:17px;border-radius:50%;background:var(--bg);border:3px solid var(--b)}
@@ -66,12 +66,12 @@ h1{font-size:clamp(42px,7vw,76px);font-weight:800;margin-bottom:22px}
 .tag{display:inline-block;font-size:12px;color:var(--m);border:1px solid var(--l);border-radius:999px;padding:2px 10px;margin:14px 0 6px}
 .pf .card{padding:0;overflow:hidden}
 .pf .in{padding:0 22px 22px}
-.price{font:800 40px Sora,sans-serif;margin:12px 0}
+.price{font:800 28px Sora,sans-serif;margin:12px 0}
 .price small{font:500 14px system-ui;color:var(--m)}
 .card ul{list-style:none;padding:0;margin:18px 0 24px;color:var(--m);font-size:15px}
 .card li{padding:6px 0;border-top:1px solid var(--l)}
-.hot{border-color:#6c5cff;background:linear-gradient(180deg,#171a2b,var(--s))}
-.badge{position:absolute;top:-12px;right:22px;background:var(--g);color:#06080c;font:700 12px system-ui;padding:4px 12px;border-radius:999px}
+.hot{border-color:#0a84ff;background:linear-gradient(180deg,#d9edff,var(--s))}
+.badge{position:absolute;top:-12px;right:22px;background:var(--g);color:#fff;font:700 12px system-ui;padding:4px 12px;border-radius:999px}
 .abt{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .abt p{color:var(--m);margin-bottom:16px}
 blockquote{font-size:16px;margin-bottom:18px}
@@ -82,7 +82,7 @@ summary::-webkit-details-marker{display:none}
 summary:after{content:"+";color:var(--b);font-size:24px}
 details[open] summary:after{content:"\2212"}
 details p{color:var(--m);margin-top:12px;max-width:720px}
-.cta{text-align:center;background:radial-gradient(600px 260px at 50% 0,rgba(108,92,255,.25),transparent)}
+.cta{text-align:center;background:radial-gradient(600px 260px at 50% 0,rgba(10,132,255,.2),transparent)}
 .cta .sub{margin:0 auto 36px}
 form{max-width:560px;margin:36px auto 0;display:grid;gap:12px;text-align:left}
 input,select,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--l);background:var(--s);color:var(--t);font:inherit}
@@ -110,6 +110,24 @@ section{padding:72px 0}
 }
 @media(max-width:560px){.grid,.why{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.sm{height:204px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;overflow:hidden;font-family:Sora,system-ui,sans-serif}
+.sm h4{margin:0 0 8px;font-size:15px;line-height:1.15;letter-spacing:-.02em}
+.sn{display:flex;align-items:center;gap:8px;font-size:9px}
+.sn b{margin-right:auto;letter-spacing:.08em}
+.sn i{width:20px;height:3px;border-radius:2px;background:currentColor;opacity:.35}
+.sh{display:flex;gap:14px;flex:1;align-items:center}
+.sh>div:first-child{flex:1}
+.sb{display:inline-block;font-size:8px;font-weight:700;padding:5px 11px;border-radius:99px}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.sg span{border-radius:7px;height:34px}
+.pf .card .bar{background:var(--s)}
+.pf .card{cursor:pointer}.vw{color:var(--b)!important;font-weight:600;margin-top:10px}
+#ov{position:fixed;inset:0;z-index:50;background:var(--bg);display:none;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+#ov.on{display:flex}
+.ob{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--l);font-size:14px;color:var(--m)}
+#ov iframe{flex:1;border:0;width:100%;background:#fff}
+.stars{color:#ffb400;letter-spacing:3px;font-size:19px;margin-bottom:12px}
 </style>
 </head>
 <body>
@@ -150,13 +168,13 @@ section{padding:72px 0}
 
 <section id="work"><div class="w">
 <h2 class="rv">See What We Can Build.</h2>
-<p class="sub rv">Six sample projects for fictional businesses, made to show range across industries.</p>
+<p class="sub rv">Six sample projects for fictional businesses, made to show range across industries. Tap any card to explore it.</p>
 <div class="grid pf" id="pf"></div>
 </div></section>
 
 <section id="pricing"><div class="w">
 <h2 class="rv">Simple Plans. Custom Results.</h2>
-<p class="sub rv">Every plan is a starting point. Final pricing depends on your project.</p>
+<p class="sub rv">Every project is quoted privately, based on exactly what you need.</p>
 <div class="grid" id="pr"></div>
 </div></section>
 
@@ -168,7 +186,7 @@ section{padding:72px 0}
 
 <section><div class="w">
 <h2 class="rv">Kind Words.</h2>
-<p class="sub rv">Placeholder testimonials, replace them with real client feedback.</p>
+<p class="sub rv">Sample reviews shown for illustration. Replace them with real client feedback when you have it.</p>
 <div class="grid" id="ts"></div>
 </div></section>
 
@@ -202,26 +220,28 @@ section{padding:72px 0}
 
 <dialog id="dl"><h3 id="dt" style="margin-bottom:12px"></h3><p style="color:var(--m);margin-bottom:20px">Placeholder text. Replace this with your own policy before launch.</p><form method="dialog" style="margin:0"><button class="btn">Close</button></form></dialog>
 
+<div id="ov"><div class="ob"><span id="ot"></span><button class="btn" id="oc" style="padding:8px 18px">Close sample</button></div><iframe id="fr" title="Sample website" sandbox=""></iframe></div>
 <script>
 // Edit everything below to change the site content.
 var CONFIG={
-email:"hello@customflow.com",
+email:"customflow.official@gmail.com",
+key:"bf80b0f3-9f89-4474-9618-d33fca85fd25",
 social:{Instagram:"#",LinkedIn:"#",X:"#"},
 plans:[
-{n:"Starter",d:"For simple websites and personal projects.",p:"$499",f:["Up to 3 pages","Mobile responsive","Basic SEO setup","1 round of revisions"]},
-{n:"Pro",d:"For businesses that need a complete professional website.",p:"$1,499",f:["Up to 8 pages","Custom design","SEO friendly structure","3 rounds of revisions"],hot:1},
-{n:"Business",d:"For larger websites and advanced requirements.",p:"$3,499",f:["Unlimited pages","E-commerce or integrations","Priority support","Flexible revisions"]}
+{n:"Starter",d:"For simple websites and personal projects.",p:"Custom quote",f:["Up to 3 pages","Mobile responsive","Basic SEO setup","1 round of revisions"]},
+{n:"Pro",d:"For businesses that need a complete professional website.",p:"Custom quote",f:["Up to 8 pages","Custom design","SEO friendly structure","3 rounds of revisions"],hot:1},
+{n:"Business",d:"For larger websites and advanced requirements.",p:"Custom quote",f:["Unlimited pages","E-commerce or integrations","Priority support","Flexible revisions"]}
 ],
 reviews:[
-{q:"Replace this with a real client testimonial about working with Custom Flow.",w:"Client Name, Company"},
-{q:"Replace this with a real client testimonial about working with Custom Flow.",w:"Client Name, Company"},
-{q:"Replace this with a real client testimonial about working with Custom Flow.",w:"Client Name, Company"}
+{q:"Honestly a lifesaver. Custom Flow turned our rough idea into a clean, professional website.",w:"Daniel Foster, Cafe owner"},
+{q:"Too useful. They understood exactly what we needed and made every change quickly.",w:"Priya Nair, Startup founder"},
+{q:"This should definitely be an app. The whole process is that smooth and easy.",w:"Marcus Bell, Freelance photographer"}
 ]};
 
 var services=[["Business Websites","Professional sites that build trust and turn visitors into customers."],["Landing Pages","Focused pages designed for one goal and built to convert."],["Portfolio Websites","Showcase your work with a site that feels as sharp as you are."],["E-commerce Websites","Smooth online stores that make buying simple."],["Startup Websites","Launch ready sites that tell your story and win early users."],["Website Redesigns","Give an outdated site a fresh, faster and more effective look."]];
 var why=["Custom designs","Fast development","Mobile responsive","Modern UI/UX","SEO friendly structure","Easy communication","Flexible revisions"];
 var steps=[["01","Tell Us Your Idea","Share your goals, brand and inspiration with us."],["02","We Design & Build","We craft a custom site around what you told us."],["03","You Review","Look it over and request as many tweaks as you need."],["04","We Launch","Your site goes live, polished and ready for visitors."]];
-var work=[["Ember & Oak","Restaurant","#7a2e1d","#e08a3c"],["Nimbus Labs","Technology startup","#2b3fbf","#19d3c5"],["Northwind Apparel","Clothing brand","#222","#8d7b6a"],["Ava Lindqvist","Personal portfolio","#5a2a83","#d06bc0"],["Harbor Plumbing","Local business","#0e5a73","#3fb6d6"],["Pulseboard","SaaS company","#1c3a8a","#6c5cff"]];
+var work=[["Alder & Ash","Restaurant"],["Lumen Labs","Technology startup"],["Marlow & Co","Clothing brand"],["Elena Marsh","Personal portfolio"],["Bayview Plumbing","Local business"],["Tasklane","SaaS company"]];
 var faqs=[["How long does a website take?","Most sites take one to three weeks depending on size and complexity. We give you a clear timeline before we start."],["Can I request changes?","Yes. Every plan includes revisions, and we keep refining until you are happy."],["Can you redesign my existing website?","Absolutely. We can keep what works and rebuild the rest with a modern design."],["Can you connect my domain?","Yes. We can connect a domain you own or help you choose and register a new one."],["Do you provide hosting?","We can set up reliable hosting for you or deploy to the provider you already use."],["Can you maintain my website after launch?","Yes. We offer ongoing updates and support if you would like us to stay involved."],["What information do you need from me?","Your goals, brand details such as logo and colors, any content you have, and examples of sites you like."]];
 
 var $=function(i){return document.getElementById(i)};
@@ -229,15 +249,23 @@ function mock(t,a,b,s){return '<div class="h" style="background:linear-gradient(
 $("sv").innerHTML=services.map(function(s){return '<div class="card rv"><div class="ic"></div><h3>'+s[0]+'</h3><p>'+s[1]+'</p></div>'}).join("");
 $("wy").innerHTML=why.map(function(w){return '<div>'+w+'</div>'}).join("");
 $("sp").innerHTML=steps.map(function(s){return '<div class="st"><em>'+s[0]+'</em><h3>'+s[1]+'</h3><p>'+s[2]+'</p></div>'}).join("");
-$("pf").innerHTML=work.map(function(w){return '<div class="card rv"><div class="mk">'+mock(w[0],w[2],w[3],w[1])+'</div><div class="in"><span class="tag">Sample project</span><h3>'+w[0]+'</h3><p>'+w[1]+' concept, fictional business.</p></div></div>'}).join("");
-$("pr").innerHTML=CONFIG.plans.map(function(p){return '<div class="card rv'+(p.hot?' hot':'')+'">'+(p.hot?'<span class="badge">Most popular</span>':'')+'<h3>'+p.n.toUpperCase()+'</h3><p>'+p.d+'</p><div class="price">'+p.p+' <small>starting at</small></div><ul>'+p.f.map(function(f){return '<li>'+f+'</li>'}).join("")+'</ul><a href="#contact" class="btn'+(p.hot?' p':'')+'" data-plan="'+p.n+'">Choose '+p.n+'</a></div>'}).join("");
-$("ts").innerHTML=CONFIG.reviews.map(function(r){return '<div class="card rv"><blockquote>"'+r.q+'"</blockquote><div class="who">'+r.w+'</div></div>'}).join("");
+var SM=[
+'<div class="sm" style="background:#fff7ec;color:#3a1d0e"><div class="sn"><b>ALDER &amp; ASH</b><i></i><i></i><i></i></div><div class="sh"><div><h4>Fire. Smoke. Seasonal.</h4><span class="sb" style="background:#e8590c;color:#fff">Reserve a table</span></div><div style="width:86px;height:86px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f0b46a,#7a2e1d);box-shadow:0 0 0 9px rgba(224,138,60,.15)"></div></div><div class="sg"><span style="background:#ffe8cc"></span><span style="background:#ffe8cc"></span><span style="background:#ffe8cc"></span></div></div>',
+'<div class="sm" style="background:#f4fbff;color:#0b2540"><div class="sn"><b>LUMEN</b><i></i><i></i><i></i></div><div class="sh"><div><h4>Ship faster with less noise.</h4><span class="sb" style="background:#0a84ff;color:#fff">Start free</span></div><div style="width:100px;padding:10px;border-radius:9px;background:#e1f1ff;display:grid;gap:6px"><b style="height:5px;width:70%;background:#19d3c5;border-radius:3px"></b><b style="height:5px;width:92%;background:#c7c9f2;border-radius:3px"></b><b style="height:5px;width:55%;background:#6c5cff;border-radius:3px"></b><b style="height:5px;width:80%;background:#c7c9f2;border-radius:3px"></b></div></div><div class="sg"><span style="background:#e1f1ff"></span><span style="background:#e1f1ff"></span><span style="background:#e1f1ff"></span></div></div>',
+'<div class="sm" style="background:#efe9e1;color:#241f1a"><div class="sn"><b>MARLOW &amp; CO</b><i></i><i></i><i></i></div><h4 style="margin:0">Autumn Collection</h4><div class="sg" style="flex:1"><span style="height:auto;background:#8d7b6a"></span><span style="height:auto;background:#3b3530"></span><span style="height:auto;background:#c8b8a4"></span></div></div>',
+'<div class="sm" style="background:#faf5ff;color:#2b1055"><div class="sn"><b>ELENA M.</b><i></i><i></i><i></i></div><div><h4 style="font-size:19px;margin-bottom:3px">Elena Marsh</h4><div style="font-size:9px;opacity:.6">Product designer</div></div><div class="sg" style="flex:1"><span style="height:auto;background:linear-gradient(135deg,#5a2a83,#d06bc0)"></span><span style="height:auto;background:linear-gradient(135deg,#2b3fbf,#19d3c5)"></span><span style="height:auto;background:linear-gradient(135deg,#7a2e1d,#e08a3c)"></span></div></div>',
+'<div class="sm" style="background:#eaf4f8;color:#0b2a36"><div class="sn"><b>BAYVIEW</b><i></i><i></i><i></i></div><div class="sh"><div><h4>Fast, honest plumbing.</h4><span class="sb" style="background:#0e5a73;color:#fff">Call now</span></div><div style="width:84px;height:84px;border-radius:14px;background:linear-gradient(135deg,#3fb6d6,#0e5a73)"></div></div><div class="sg"><span style="background:#d3e8f0"></span><span style="background:#d3e8f0"></span><span style="background:#d3e8f0"></span></div></div>',
+'<div class="sm" style="background:#f7f5ff;color:#1b1464"><div class="sn"><b>TASKLANE</b><i></i><i></i><i></i></div><div class="sh"><div><h4>Metrics your team will read.</h4><span class="sb" style="background:#6c5cff;color:#fff">Book a demo</span></div><div style="width:106px;height:80px;border-radius:9px;background:#ebe6ff;padding:10px;display:flex;align-items:flex-end;gap:5px"><b style="flex:1;height:35%;background:#c7c9f2;border-radius:2px"></b><b style="flex:1;height:55%;background:#c7c9f2;border-radius:2px"></b><b style="flex:1;height:45%;background:#6c5cff;border-radius:2px"></b><b style="flex:1;height:80%;background:#19d3c5;border-radius:2px"></b><b style="flex:1;height:65%;background:#6c5cff;border-radius:2px"></b></div></div><div class="sg"><span style="background:#ebe6ff"></span><span style="background:#ebe6ff"></span><span style="background:#ebe6ff"></span></div></div>'
+];
+$("pf").innerHTML=work.map(function(w,i){return '<div class="card rv" data-i="'+i+'"><div class="bar"><i></i><i></i><i></i></div>'+SM[i]+'<div class="in"><span class="tag">Sample project</span><h3>'+w[0]+'</h3><p>'+w[1]+' concept, fictional business.</p><p class="vw">View sample site</p></div></div>'}).join("");
+$("pr").innerHTML=CONFIG.plans.map(function(p){return '<div class="card rv'+(p.hot?' hot':'')+'">'+(p.hot?'<span class="badge">Most popular</span>':'')+'<h3>'+p.n.toUpperCase()+'</h3><p>'+p.d+'</p><div class="price">'+p.p+'</div><ul>'+p.f.map(function(f){return '<li>'+f+'</li>'}).join("")+'</ul><a href="#contact" class="btn'+(p.hot?' p':'')+'" data-plan="'+p.n+'">Request a quote</a></div>'}).join("");
+$("ts").innerHTML=CONFIG.reviews.map(function(r){return '<div class="card rv"><div class="stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>"'+r.q+'"</blockquote><div class="who">'+r.w+'</div></div>'}).join("");
 $("fq").innerHTML=faqs.map(function(f){return '<details><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>'}).join("");
 $("so").innerHTML=Object.keys(CONFIG.social).map(function(k){return '<a href="'+CONFIG.social[k]+'" target="_blank" rel="noopener">'+k+'</a>'}).join("");
 $("em").innerHTML='<a href="mailto:'+CONFIG.email+'">'+CONFIG.email+'</a>';
 $("yr").textContent=new Date().getFullYear();
 
-var demo=[["Ember & Oak","#7a2e1d","#e08a3c","Restaurant"],["Nimbus Labs","#2b3fbf","#19d3c5","Startup"],["Northwind","#222","#8d7b6a","Clothing brand"],["Pulseboard","#1c3a8a","#6c5cff","SaaS"]],di=0;
+var demo=[["Alder & Ash","#ff9a4d","#e8590c","Restaurant"],["Lumen Labs","#38d0ff","#0a84ff","Startup"],["Marlow & Co","#ff8fa3","#ff4d6d","Clothing brand"],["Tasklane","#7c5cff","#20d5c0","SaaS"]],di=0;
 function show(){var d=demo[di%demo.length],h=$("hm");h.style.opacity=0;setTimeout(function(){h.innerHTML=mock(d[0],d[1],d[2],d[3]);$("lab").textContent="Building: "+d[3];h.style.opacity=1;di++},400)}
 show();setInterval(show,3200);
 
@@ -247,12 +275,34 @@ document.querySelectorAll("[data-plan]").forEach(function(a){a.onclick=function(
 document.querySelectorAll("[data-d]").forEach(function(a){a.onclick=function(e){e.preventDefault();$("dt").textContent=a.dataset.d;$("dl").showModal()}});
 
 $("fm").onsubmit=function(e){e.preventDefault();var n=$("n").value.trim(),em=$("e").value.trim(),m=$("m").value.trim(),o=$("ok");
-if(!n||!/^\S+@\S+\.\S+$/.test(em)||!m){o.style.color="#ff8a8a";o.textContent="Please fill in your name, a valid email and a short message.";return}
-o.style.color="";o.textContent="Thank you, "+n+". Your email app will open to send your request.";
-location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("New project: "+$("t").value)+"&body="+encodeURIComponent("Name: "+n+"\nEmail: "+em+"\n\n"+m)};
+if(!n||!/^\S+@\S+\.\S+$/.test(em)||!m){o.style.color="#d63a3a";o.textContent="Please fill in your name, a valid email and a short message.";return}
+var b=e.target.querySelector("button");b.disabled=true;o.style.color="";o.textContent="Sending...";
+fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({access_key:CONFIG.key,subject:"New project request: "+$("t").value,from_name:"Custom Flow website",name:n,email:em,project_type:$("t").value,message:m})}).then(function(r){return r.json()}).then(function(d){if(!d.success){throw new Error("fail")}o.textContent="Thank you, "+n+". Your request was sent and we will reply soon.";$("fm").reset()}).catch(function(){o.style.color="#d63a3a";o.textContent="Sorry, that did not send. Please email us at "+CONFIG.email+"."}).then(function(){b.disabled=false})};
 
-var io=new IntersectionObserver(function(x){x.forEach(function(i){if(i.isIntersecting){i.target.classList.add("on");io.unobserve(i.target)}})},{threshold:.12});
-document.querySelectorAll(".rv").forEach(function(r){io.observe(r)});
+
+// Photo files for the sample sites. Upload these files next to index.html in GitHub, or replace with full image links.
+var IMGS=["restaurant.jpg","startup.jpg","clothing.jpg","portfolio.jpg","plumbing.jpg","saas.jpg"];
+var DEMO=[
+{n:"Alder & Ash",f:"Georgia,serif",bg:"#fff7ec",fg:"#3a1d0e",ac:"#e8590c",al:"#ffe8cc",bt:"#ffffff",v:"#ffb347,#e8590c",l:["Menu","Our story","Visit"],c:"Reserve a table",h:"Wood fired cooking, made for sharing.",s:"Seasonal plates, local produce and a fire that never goes out. Open Tuesday to Sunday.",st:"On the menu",i:[["Charred Leeks","Hazelnut, brown butter and aged sheep cheese."],["Coal Roasted Lamb","Smoked garlic, rosemary jus and pickled shallots."],["Burnt Honey Tart","Creme fraiche, sea salt and toasted oats."]],q:"The best meal we have had all year.",qa:"Sample guest review"},
+{n:"Lumen Labs",f:"system-ui,sans-serif",bg:"#f4fbff",fg:"#0b2540",ac:"#0a84ff",al:"#e1f1ff",bt:"#ffffff",v:"#00d4ff,#0a84ff",l:["Product","How it works","Team"],c:"Join the waitlist",h:"Smart energy monitoring for modern buildings.",s:"Lumen shows you where energy is wasted and helps you cut costs without changing how you work.",st:"Why Lumen",i:[["Real time monitoring","See usage across every floor as it happens."],["Instant alerts","Get notified the moment something looks wrong."],["Clear reports","Simple monthly summaries your team can act on."]],q:"Our energy costs dropped in the first quarter.",qa:"Sample customer"},
+{n:"Marlow & Co",f:"system-ui,sans-serif",bg:"#fffaf0",fg:"#1f1f1f",ac:"#ff4d6d",al:"#ffe3e8",bt:"#ffffff",v:"#ff8fa3,#ff4d6d",l:["Shop","Lookbook","About"],c:"Shop the collection",h:"Timeless pieces, made to last.",s:"Considered clothing in natural fabrics, designed in small runs and built to be worn for years.",st:"New arrivals",i:[["Wool Overcoat","$240"],["Linen Shirt","$95"],["Everyday Trouser","$120"]],q:"Quality you can feel from the first wear.",qa:"Sample customer"},
+{n:"Elena Marsh",f:"system-ui,sans-serif",bg:"#faf5ff",fg:"#2b1055",ac:"#8a2be2",al:"#efe0ff",bt:"#ffffff",v:"#c77dff,#7b2ff7",l:["Work","About","Contact"],c:"Get in touch",h:"Product designer crafting calm, useful interfaces.",s:"Elena designs apps and websites for startups and small teams. Currently available for new projects.",st:"Selected work",i:[["Fable Reading App","Mobile app design"],["Northside Bank","Dashboard redesign"],["Kiln Studio","Brand and website"]],q:"Elena made our product feel effortless to use.",qa:"Sample client"},
+{n:"Bayview Plumbing",f:"system-ui,sans-serif",bg:"#f0fbff",fg:"#073b4c",ac:"#06a3da",al:"#d9f3fb",bt:"#ffffff",v:"#48cae4,#0077b6",l:["Services","Areas","Contact"],c:"Call 555 0142",h:"Fast, honest plumbing for your home.",s:"Licensed local plumbers offering same day call outs and upfront pricing.",st:"Our services",i:[["Repairs and leaks","Quick fixes for taps, pipes and drains."],["Boiler and heating","Servicing, repairs and new installs."],["Bathroom fitting","Clean, tidy installs from start to finish."]],q:"Arrived on time and fixed it within the hour.",qa:"Sample customer"},
+{n:"Tasklane",f:"system-ui,sans-serif",bg:"#f7f5ff",fg:"#1b1464",ac:"#5b3df5",al:"#ebe6ff",bt:"#ffffff",v:"#7c5cff,#20d5c0",l:["Features","Pricing","Log in"],c:"Start free trial",h:"Project planning your whole team will actually use.",s:"Tasklane keeps tasks, timelines and updates together in one calm workspace.",st:"Everything in one place",i:[["Shared boards","See work move from idea to done."],["Timelines","Plan ahead without messy spreadsheets."],["Team updates","Fewer meetings and clearer progress."]],q:"We replaced three tools with Tasklane.",qa:"Sample customer"}
+];
+function site(d){
+var css="*{box-sizing:border-box;margin:0}body{font-family:"+d.f+";background:"+d.bg+";color:"+d.fg+";line-height:1.6}a{color:inherit;text-decoration:none}.w{max-width:1000px;margin:0 auto;padding:0 24px}nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}nav b{font-size:20px}nav div{display:flex;gap:26px;align-items:center;font-size:15px}.btn{display:inline-block;background:"+d.ac+";color:"+d.bt+";padding:12px 24px;border-radius:99px;font-weight:600}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:48px 0 72px}h1{font-size:clamp(32px,6vw,54px);line-height:1.1;margin-bottom:18px}.hero p{opacity:.75;font-size:18px;margin-bottom:28px}.vis{aspect-ratio:4/3;box-shadow:0 20px 50px rgba(0,0,0,.15);border-radius:24px;background:linear-gradient(135deg,"+d.v+")}section{padding:56px 0;border-top:1px solid rgba(128,128,128,.25)}h2{font-size:30px;margin-bottom:28px}.g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.c{background:"+d.al+";padding:24px;border-radius:16px}.c h3{margin-bottom:8px;font-size:19px}.c p{opacity:.75;font-size:15px}.q{text-align:center;font-size:24px;padding:64px 0}.q small{display:block;opacity:.6;font-size:14px;margin-top:10px}footer{padding:32px 0;opacity:.6;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid rgba(128,128,128,.25)}@media(max-width:720px){.hero,.g{grid-template-columns:1fr}.vis{aspect-ratio:16/10}nav div a:not(.btn){display:none}}";
+var nav=d.l.map(function(x){return "<a href='#'>"+x+"</a>"}).join("");
+var items=d.i.map(function(x){return "<div class='c'><h3>"+x[0]+"</h3><p>"+x[1]+"</p></div>"}).join("");
+return "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><style>"+css+"</style></head><body><div class='w'><nav><b>"+d.n+"</b><div>"+nav+"<a href='#' class='btn'>"+d.c+"</a></div></nav><div class='hero'><div><h1>"+d.h+"</h1><p>"+d.s+"</p><a href='#' class='btn'>"+d.c+"</a></div><div class='vis' style='"+(d.img?"background:url("+d.img+") center/cover,linear-gradient(135deg,"+d.v+")":"")+"'></div></div><section><h2>"+d.st+"</h2><div class='g'>"+items+"</div></section><div class='q'>&ldquo;"+d.q+"&rdquo;<small>"+d.qa+"</small></div><footer><span>&copy; "+d.n+". Sample website by Custom Flow.</span><span>hello@"+d.n.toLowerCase().replace(/[^a-z]/g,"")+".com</span></footer></div></body></html>"}
+function openD(i){var im=IMGS[i]||"";try{DEMO[i].img=im?new URL(im,document.baseURI).href:""}catch(e){DEMO[i].img=""}$("fr").srcdoc=site(DEMO[i]);$("ot").textContent="Sample project: "+DEMO[i].n+" (fictional business)";$("ov").classList.add("on");document.body.style.overflow="hidden"}
+function closeD(){$("ov").classList.remove("on");document.body.style.overflow="";$("fr").srcdoc=""}
+$("oc").onclick=closeD;
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeD()});
+$("pf").onclick=function(e){var c=e.target.closest("[data-i]");if(c)openD(+c.dataset.i)};
+
+try{var io=new IntersectionObserver(function(x){x.forEach(function(i){if(i.isIntersecting){i.target.classList.add("on");io.unobserve(i.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(r){io.observe(r)})}catch(e){document.querySelectorAll(".rv").forEach(function(r){r.classList.add("on")})}
 </script>
 </body>
 </html>
